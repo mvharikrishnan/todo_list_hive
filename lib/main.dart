@@ -7,7 +7,6 @@ import 'package:provider/provider.dart';
 import 'package:to_do_list_hive/app_config/app_router.dart';
 import 'package:to_do_list_hive/app_config/constants.dart';
 import 'package:to_do_list_hive/app_config/theme.dart';
-import 'package:to_do_list_hive/app_config/ui_helper.dart';
 import 'package:to_do_list_hive/app_config/routes.dart' as route;
 import 'package:to_do_list_hive/feature/AddAndEdit/controller/add_or_edit_controller.dart';
 import 'package:to_do_list_hive/feature/home/controller/home_controller.dart';
@@ -30,7 +29,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context);
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,

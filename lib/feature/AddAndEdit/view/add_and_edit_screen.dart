@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -26,7 +25,6 @@ class _AddAndEditScreenState extends State<AddAndEditScreen> {
   @override
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      log("Is todo${widget.todo?.taskTitle}");
       if (widget.todo != null) {
         context.read<AddEditController>().setEditableValues(widget.todo!);
       }

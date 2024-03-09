@@ -52,7 +52,9 @@ class HomeScreen extends StatelessWidget {
                       index: index,
                     );
                   },
-                  separatorBuilder: (context, index) => vsBox1,
+                  separatorBuilder: (context, index) => const SizedBox(
+                    height: 5,
+                  ),
                   itemCount: ref.toDoList.length,
                 );
         },
