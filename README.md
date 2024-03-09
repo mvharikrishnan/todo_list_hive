@@ -1,16 +1,24 @@
-# to_do_list_hive
+# Simple TO-DO List Application
 
-A new Flutter project.
+App simple todo list application implemented using HIVE local Storage.
+
+TO-DO List is implemented using Provider.
+
+## Version
+Version used in the last updation
+ ```sh
+flutter - 3.16.7
+dart - 3.2.4
+```
 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+To get started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* run
+```sh
+flutter pub get
+ ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
