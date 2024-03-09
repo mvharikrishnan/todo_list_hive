@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:to_do_list_hive/app_config/routes.dart' as route;
 
@@ -15,18 +17,19 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
   }
 
+  initRoute() async {
+    log("message");
+    //navigate to login screen
+    Future.delayed(const Duration(seconds: 5), () {
+      Navigator.of(context).pushReplacementNamed(route.kHomeScreen);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
       child: Container(child: Text("Splash Screen")),
     ));
-  }
-
-  initRoute() async {
-    //navigate to login screen
-    Future.delayed(const Duration(seconds: 5), () {
-      Navigator.of(context).pushReplacementNamed(route.kHomeScreen);
-    });
   }
 }
